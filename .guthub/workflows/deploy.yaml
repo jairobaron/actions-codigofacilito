@@ -1,0 +1,33 @@
+name: "Deply Codigofacilito"
+description: "Workflow to deploy Codigofacilito application"
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  deploy-codigofacilito:
+    runs-on: ubuntu-latest
+    steps:
+      run: echo "Make pull from code."
+      run: echo "Run migrations."
+      run: echo "Generate binary."
+      run: echo "Publish version."
+    
+      # - name: Checkout code
+      #   uses: actions/checkout@v2
+
+      # - name: Set up Node.js
+      #   uses: actions/setup-node@v2
+      #   with:
+      #     node-version: '14'
+
+      # - name: Install dependencies
+      #   run: npm install
+
+      # - name: Run tests
+      #   run: npm test
+
+      # - name: Deploy to production
+      #   run: echo "Deploying to production..."
+      #   env:
+      #     NODE_ENV: production
