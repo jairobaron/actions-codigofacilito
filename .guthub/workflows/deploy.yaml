@@ -8,11 +8,11 @@ jobs:
   deploy-codigofacilito:
     runs-on: ubuntu-latest
     steps:
-      uses: actions/checkout@v4
-      run: echo "Make pull from code."
-      run: echo "Run migrations."
-      run: echo "Generate binary."
-      run: echo "Publish version."
+      - uses: actions/checkout@v4
+      - run: echo "Make pull from code."
+      - run: echo "Run migrations."
+      - run: echo "Generate binary."
+      - run: echo "Publish version."
     
       # - name: Checkout code
       #   uses: actions/checkout@v2
